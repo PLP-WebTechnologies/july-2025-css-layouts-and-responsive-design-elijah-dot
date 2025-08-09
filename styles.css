@@ -1,0 +1,85 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around header */
+    text-align: center; /* Centered text */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Margin between items */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Grid layout for main content */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Two columns: content and sidebar */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around grid */
+}
+
+/* Content styles */
+.content {
+    background-color: #f9f9f9; /* Light background */
+    padding: 20px; /* Padding inside content */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #e9e9e9; /* Slightly darker background */
+    padding: 20px; /* Padding inside sidebar */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+/* Flexbox layout for services */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    gap: 20px; /* Space between cards */
+}
+
+/* Card styles */
+.card {
+    background-color: #fff; /* White background */
+    padding: 15px; /* Padding inside cards */
+    border: 1px solid #ccc; /* Light gray border */
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and base width */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Centered text */
+    padding: 10px; /* Padding around footer */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0; /* Margin between items */
+    }
+}
